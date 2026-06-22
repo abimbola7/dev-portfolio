@@ -9,13 +9,13 @@ import { FC } from "react";
 
 const Hero: FC = () => {
   return (
-    <section className="min-h-[calc(100vh-5rem)] flex items-center pt-10 pb-20 relative max-w-6xl mx-auto px-4">
+    <section className="min-h-[calc(100vh-5rem)] flex items-center pt-10 pb-20 relative max-w-6xl mx-auto px-4 w-full bg-[#0a0a0a]">
       {/* Background Glows */}
       {/* Mobile Cyan Glows */}
-      <div className="absolute top-20 -left-10 w-[300px] h-[300px] bg-cyan-500/20 rounded-full blur-[100px] pointer-events-none md:hidden"></div>
-      <div className="absolute -bottom-20 -right-10 w-[300px] h-[300px] bg-cyan-500/20 rounded-full blur-[100px] pointer-events-none md:hidden"></div>
+      <div className="absolute top-20 -left-10 w-[300px] h-[300px] bg-[#10b981]/20 rounded-full blur-[100px] md:hidden"></div>
+      <div className="absolute -bottom-20 -right-10 w-[300px] h-[300px] bg-[#10b981]/20 rounded-full blur-[100px] md:hidden"></div>
       {/* Desktop Orange Glow */}
-      <div className="hidden md:block absolute top-1/3 -left-20 w-[400px] h-[400px] bg-orange-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="hidden md:block absolute top-1/3 -left-20 w-[400px] h-[400px] bg-[#2dd4bf]/10 rounded-full blur-[100px]"></div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full relative z-10">
         {/* Text Content */}
@@ -23,7 +23,7 @@ const Hero: FC = () => {
           <div className="space-y-2">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
               Victor <br />
-              <span className="text-cyan-500">Oloruntoba</span>
+              <span className="text-[#10b981]">Oloruntoba</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 font-medium">
               AI Engineer
@@ -131,7 +131,7 @@ const Hero: FC = () => {
 
         {/* Image / Visual */}
         <div className="relative flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-2xl overflow-hidden border border-cyan-500/30 bg-card shadow-[0_0_100px_rgba(0,229,255,0.15)]">
+          <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-2xl overflow-hidden border border-[#10b981]/30 bg-card shadow-[0_0_100px_rgba(16,185,129,0.15)]">
             <Image
               src={profilePic}
               alt="Victor Oloruntoba"
@@ -141,13 +141,13 @@ const Hero: FC = () => {
               placeholder="blur"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent mix-blend-overlay"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#10b981]/10 to-transparent mix-blend-overlay"></div>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-cyan-500 animate-bounce">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-[#10b981] animate-bounce">
         <Mouse size={40} />
       </div>
     </section>
@@ -164,7 +164,7 @@ const SocialIcon = ({
   <Link
     target="_blank,"
     href={href}
-    className="w-10 h-10 rounded-lg border border-border flex items-center justify-center text-gray-400 hover:text-cyan-500 hover:border-cyan-500 transition-colors bg-card"
+    className="w-10 h-10 rounded-lg border border-border flex items-center justify-center text-gray-400 hover:text-[#10b981] hover:border-[#10b981] transition-colors bg-card"
   >
     {icon}
   </Link>

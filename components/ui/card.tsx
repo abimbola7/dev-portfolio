@@ -8,7 +8,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {}
 export const Card: FC<CardProps> = ({ className, ...props }) => {
   return (
     <div
-      className={cn("rounded-xl border border-border bg-card p-4 text-foreground shadow-sm transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(0,229,255,0.15)]", className)}
+      className={cn("rounded-xl border border-border bg-card p-4 text-foreground shadow-sm transition-all duration-300 hover:border-[#10b981]/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]", className)}
       {...props}
     />
   );

@@ -30,23 +30,23 @@ const skillCategories = [
 
 const Skills: FC = () => {
   return (
-    <section id="skills" className="py-20 px-4 flex flex-col items-center w-full bg-[#090B11]">
+    <section id="skills" className="py-20 px-4 flex flex-col items-center w-full bg-[#0a0a0a]">
       <div className="max-w-6xl w-full mx-auto flex flex-col items-center">
-      <Badge className="border-cyan-500/30 text-cyan-500 bg-cyan-500/10 mb-6 gap-2">
+      <Badge className="border-[#10b981]/30 text-[#10b981] bg-[#10b981]/10 mb-6 gap-2">
         <Code2 size={14} />
         Technical Expertise
       </Badge>
       
       <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">
-        Skills & <span className="text-cyan-500">Technologies</span>
+        Skills & <span className="text-[#10b981]">Technologies</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {skillCategories.map((category, idx) => (
-          <Card key={idx} className="bg-[#131720] hover:bg-[#12212B] border-border/50 group hover:border-cyan-500/50 hover:shadow-[0_0_40px_rgba(0,229,255,0.15)] transition-all duration-300">
+          <Card key={idx} className="bg-[#171717] hover:bg-[#262626] border-border/50 group hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)] transition-all duration-300">
             <CardContent className="p-5 md:p-6 flex flex-col gap-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-500">
+                <div className="w-12 h-12 rounded-xl bg-[#10b981]/10 border border-[#10b981]/30 flex items-center justify-center text-[#10b981]">
                   {category.icon}
                 </div>
                 <h3 className="text-xl font-bold text-white">{category.title}</h3>

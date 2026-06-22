@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground selection:bg-cyan-500/30">
+    <div className="min-h-screen bg-[#0a0a0a] text-foreground selection:bg-[#10b981]/30">
       <Navbar />
       <main className="flex flex-col pb-24">
         <Hero />

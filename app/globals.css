@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0b0f19;
-  --foreground: #f3f4f6;
+  --background: #0a0a0a;
+  --foreground: #f8fafc;
 
-  --color-cyan: #00e5ff;
-  --color-orange: #ff6b00;
-  --color-card-bg: #111827;
-  --color-card-border: #1f2937;
-  --color-hover-bg: #1f2937;
+  --color-cyan: #10b981;
+  --color-orange: #2dd4bf;
+  --color-card-bg: #171717;
+  --color-card-border: #171717;
+  --color-hover-bg: #171717;
 }
 
 /* * {
