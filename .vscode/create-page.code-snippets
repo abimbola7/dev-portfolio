@@ -1,0 +1,17 @@
+{
+  "create next page": {
+    "prefix": "dpc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,",
+    "body": [
+      "import { Metadata } from 'next';\n",
+      "export const metadata: Metadata = {",
+      "\ttitle: '${3:} - Drovaq',",
+      "};\n",
+      "const ${1:${TM_FILENAME_BASE}} = ({ params, searchParams }: PageProps<'${2:}'>) => {",
+      "\treturn (\n\t\t<div>\n\t\t\t<div>$0</div>\n\t\t</div>\n\t);",
+      "};",
+      "\nexport default ${1:${TM_FILENAME_BASE}};\n",
+    ],
+    "description": "create next page",
+  },
+}

@@ -1,0 +1,17 @@
+{
+  "create next layout": {
+    "prefix": "dlc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,",
+    "body": [
+      "import { Metadata } from 'next';\n",
+      "export const metadata: Metadata = {",
+      "\ttitle: '${3:} - Drovaq',",
+      "};\n",
+      "const ${1:${TM_FILENAME_BASE}} = ({ params, searchParams }: LayoutProps<'${2:}'>) => {",
+      "\treturn (\n\t\t<div>\n\t\t\t<div>$0</div>\n\t\t</div>\n\t);",
+      "};",
+      "\nexport default ${1:${TM_FILENAME_BASE}};\n",
+    ],
+    "description": "create next layout",
+  },
+}

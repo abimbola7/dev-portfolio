@@ -1,0 +1,15 @@
+{
+  "create next component": {
+    "prefix": "dfc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,",
+    "body": [
+      "'use client'\n",
+      "import { FC } from 'react'\n",
+      "const ${1:${TM_FILENAME_BASE}}: FC = () => {",
+      "\treturn (\n\t\t<div>\n\t\t\t<div>$0</div>\n\t\t</div>\n\t);",
+      "};",
+      "\nexport default ${1:${TM_FILENAME_BASE}};\n",
+    ],
+    "description": "create next component",
+  },
+}
