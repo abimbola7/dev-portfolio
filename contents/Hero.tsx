@@ -5,6 +5,7 @@ import { Download, Mail, Mouse } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import profilePic from "../public/images/toba-profile.png";
 
 const Hero: FC = () => {
   return (
@@ -132,10 +133,12 @@ const Hero: FC = () => {
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-2xl overflow-hidden border border-cyan-500/30 bg-card shadow-[0_0_100px_rgba(0,229,255,0.15)]">
             <Image
-              src="/images/toba-profile.PNG"
+              src={profilePic}
               alt="Victor Oloruntoba"
               fill
+              sizes="(max-width: 768px) 100vw, 400px"
               className="object-cover"
+              placeholder="blur"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent mix-blend-overlay"></div>
