@@ -5,7 +5,7 @@ import { Download, Mail, Mouse } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import profilePic from "../public/images/toba-profile.png";
+import profilePic from "@/assets/images/toba-profile.png";
 
 const Hero: FC = () => {
   return (
