@@ -14,7 +14,7 @@ const education = [
     status: "In Progress",
   },
   {
-    degree: "Bachelor of Science in Systems Engineering",
+    degree: "Bachelor of Science in Electrical and Electronics Engineering",
     university: "Obafemi Awolowo University",
     date: "Graduated Dec 2023",
     location: "Osun, Nigeria",

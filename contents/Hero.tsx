@@ -2,11 +2,11 @@
 
 import profilePic from "@/assets/images/toba-profile.png";
 import Button from "@/components/ui/button";
+import Typewriter from "@/components/ui/typewriter";
 import { Download, Mail, Mouse } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import Typewriter from "@/components/ui/typewriter";
 
 const Hero: FC = () => {
   return (
@@ -24,10 +24,17 @@ const Hero: FC = () => {
           <div className="space-y-2">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
               Victor <br />
-              <span className="text-[#10b981]">Oloruntoba</span>
+              <span className="text-[#10b981]">Toba</span>
             </h1>
             <div className="text-xl md:text-2xl text-gray-300 font-medium h-8">
-              <Typewriter words={["AI Engineer", "Data Scientist", "Hackathon Winner", "Systems Engineer"]} />
+              <Typewriter
+                words={[
+                  "AI Engineer",
+                  "Data Scientist",
+                  "Hackathon Winner",
+                  "Systems Engineer",
+                ]}
+              />
             </div>
           </div>
 
