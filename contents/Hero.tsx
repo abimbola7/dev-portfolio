@@ -6,6 +6,7 @@ import { Download, Mail, Mouse } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import Typewriter from "@/components/ui/typewriter";
 
 const Hero: FC = () => {
   return (
@@ -25,9 +26,9 @@ const Hero: FC = () => {
               Victor <br />
               <span className="text-[#10b981]">Oloruntoba</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 font-medium">
-              AI Engineer
-            </p>
+            <div className="text-xl md:text-2xl text-gray-300 font-medium h-8">
+              <Typewriter words={["AI Engineer", "Data Scientist", "Hackathon Winner", "Systems Engineer"]} />
+            </div>
           </div>
 
           <p className="text-gray-400 text-lg leading-relaxed max-w-lg">

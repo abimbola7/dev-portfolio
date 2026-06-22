@@ -5,6 +5,7 @@ import Hackathons from "@/contents/Hackathons";
 import Hero from "@/contents/Hero";
 import Navbar from "@/contents/Navbar";
 import Skills from "@/contents/Skills";
+import Projects from "@/contents/Projects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <Hackathons />
         <Experience />
+        <Projects />
         <Education />
         <Skills />
         <Contact />
