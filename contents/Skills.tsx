@@ -43,7 +43,7 @@ const Skills: FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {skillCategories.map((category, idx) => (
-          <Card key={idx} className="bg-[#171717] hover:bg-[#262626] border-border/50 group hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)] transition-all duration-300">
+          <Card key={idx} className="bg-white/5 backdrop-blur-md hover:bg-white/10 border-white/10 group hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)] transition-all duration-300">
             <CardContent className="p-5 md:p-6 flex flex-col gap-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-xl bg-[#10b981]/10 border border-[#10b981]/30 flex items-center justify-center text-[#10b981]">

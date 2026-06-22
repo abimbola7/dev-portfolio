@@ -40,7 +40,7 @@ const Education: FC = () => {
           {education.map((edu, idx) => (
             <Card
               key={idx}
-              className="bg-card/50 border-border/50 relative overflow-hidden"
+              className="bg-white/5 backdrop-blur-md border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 relative overflow-hidden"
             >
               {/* Inner right glow */}
               <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[250px] h-[250px] bg-[#10b981]/10 rounded-full blur-[60px] pointer-events-none translate-x-1/3"></div>

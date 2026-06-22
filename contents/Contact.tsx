@@ -31,7 +31,7 @@ const Contact: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-3xl mb-12">
           {/* Email Card */}
           <Link href="mailto:victor.automations@gmail.com" className="w-full">
-            <Card className="h-full bg-card/50 border-border/50 text-center flex flex-col items-center hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <Card className="h-full bg-white/5 backdrop-blur-md border-white/10 hover:bg-white/10 text-center flex flex-col items-center hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-300 cursor-pointer relative overflow-hidden">
               {/* Inner right glow */}
               <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[120px] h-[120px] bg-[#10b981]/5 rounded-full blur-[30px] pointer-events-none translate-x-1/3"></div>
 
@@ -49,7 +49,7 @@ const Contact: FC = () => {
 
           {/* Phone Card */}
           <Link href="tel:+16076631556" className="w-full">
-            <Card className="h-full bg-card/50 border-border/50 text-center flex flex-col items-center hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <Card className="h-full bg-white/5 backdrop-blur-md border-white/10 hover:bg-white/10 text-center flex flex-col items-center hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-300 cursor-pointer relative overflow-hidden">
               {/* Inner right glow */}
               <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[120px] h-[120px] bg-[#10b981]/5 rounded-full blur-[30px] pointer-events-none translate-x-1/3"></div>
 
@@ -65,7 +65,7 @@ const Contact: FC = () => {
 
           {/* Location Card */}
           <div className="w-full">
-            <Card className="h-full bg-card/50 border-border/50 text-center flex flex-col items-center hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-300 relative overflow-hidden">
+            <Card className="h-full bg-white/5 backdrop-blur-md border-white/10 hover:bg-white/10 text-center flex flex-col items-center hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-300 relative overflow-hidden">
               {/* Inner right glow */}
               <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[120px] h-[120px] bg-[#10b981]/5 rounded-full blur-[30px] pointer-events-none translate-x-1/3"></div>
 

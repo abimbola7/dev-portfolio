@@ -2,8 +2,7 @@
 
 import Badge from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Briefcase, Menu } from "lucide-react";
-import Link from "next/link";
+import { Briefcase } from "lucide-react";
 import { FC } from "react";
 
 const experiences = [
@@ -52,24 +51,24 @@ const Experience: FC = () => {
       className="py-20 px-4 flex flex-col items-center w-full bg-[#0a0a0a]"
     >
       <div className="max-w-4xl w-full mx-auto flex flex-col items-center">
-        <Badge className="border-[#2dd4bf]/30 text-[#2dd4bf] bg-[#2dd4bf]/10 mb-6 gap-2">
+        <Badge className="border-[#10b981]/30 text-[#10b981] bg-[#10b981]/10 mb-6 gap-2">
           <Briefcase size={14} />
           Professional Journey
         </Badge>
 
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">
-          Work <span className="text-[#2dd4bf]">Experience</span>
+          Work <span className="text-[#10b981]">Experience</span>
         </h2>
 
         <div className="w-full space-y-6">
           {experiences.map((exp, idx) => (
             <Card
               key={idx}
-              className="bg-[#171717] hover:bg-[#262626] border-border/50 group hover:border-[#2dd4bf]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)] transition-all duration-300"
+              className="bg-white/5 backdrop-blur-md hover:bg-white/10 border-white/10 group hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)] transition-all duration-300"
             >
               <CardContent className="p-5 md:p-6 flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-xl bg-card border border-border flex items-center justify-center text-[#2dd4bf]">
+                  <div className="w-12 h-12 rounded-xl bg-card border border-border flex items-center justify-center text-[#10b981]">
                     <Briefcase size={20} />
                   </div>
                 </div>
@@ -77,7 +76,7 @@ const Experience: FC = () => {
                 <div className="flex-grow flex flex-col">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-[#2dd4bf] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-white group-hover:text-[#10b981] transition-colors duration-300">
                         {exp.role}
                       </h3>
                       <p className="text-[#10b981] font-medium">{exp.company}</p>
@@ -95,7 +94,7 @@ const Experience: FC = () => {
                           key={i}
                           className="text-gray-300 text-sm md:text-base flex items-start"
                         >
-                          <span className="text-[#2dd4bf] mr-2 mt-1.5 text-xs">
+                          <span className="text-[#10b981] mr-2 mt-1.5 text-xs">
                             ●
                           </span>
                           {point}
