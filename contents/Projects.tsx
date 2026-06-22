@@ -5,7 +5,15 @@ import { ExternalLink, FolderGit2, GitBranch } from "lucide-react";
 import Link from "next/link";
 import { FC } from "react";
 
-const projectsData = [
+type Project = {
+  title: string;
+  description: string;
+  tech: string[];
+  github: string;
+  demo?: string;
+};
+
+const projectsData: Project[] = [
   {
     title: "Agentic SEO Article Generator",
     description:
