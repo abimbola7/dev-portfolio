@@ -17,7 +17,7 @@ const education = [
     degree: "Bachelor of Science in Systems Engineering",
     university: "Obafemi Awolowo University",
     date: "Graduated Dec 2023",
-    location: "Lagos, Nigeria",
+    location: "Osun, Nigeria",
     status: "Completed",
   },
 ];
@@ -68,7 +68,9 @@ const Education: FC = () => {
                       </p>
                     </div>
                     <div className="text-left md:text-right mt-3 md:mt-0 flex flex-col gap-1">
-                      <span className={`self-start md:self-end text-xs font-semibold px-2 py-0.5 rounded-full ${edu.status === "In Progress" ? "bg-[#10b981]/15 text-[#10b981] border border-[#10b981]/30" : "bg-white/5 text-gray-400 border border-white/10"}`}>
+                      <span
+                        className={`self-start md:self-end text-xs font-semibold px-2 py-0.5 rounded-full ${edu.status === "In Progress" ? "bg-[#10b981]/15 text-[#10b981] border border-[#10b981]/30" : "bg-white/5 text-gray-400 border border-white/10"}`}
+                      >
                         {edu.status}
                       </span>
                       <p className="text-sm text-gray-400">{edu.date}</p>
