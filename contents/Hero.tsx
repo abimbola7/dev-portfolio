@@ -1,11 +1,11 @@
 "use client";
 
+import profilePic from "@/assets/images/toba-profile.png";
 import Button from "@/components/ui/button";
 import { Download, Mail, Mouse } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import profilePic from "@/assets/images/toba-profile.png";
 
 const Hero: FC = () => {
   return (
@@ -147,7 +147,7 @@ const Hero: FC = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-cyan-500 animate-bounce">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-cyan-500 animate-bounce">
         <Mouse size={40} />
       </div>
     </section>

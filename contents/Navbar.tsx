@@ -1,9 +1,9 @@
 "use client";
 
 import Button from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { FC, useState } from "react";
-import { Menu, X } from "lucide-react";
 
 const Navbar: FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,19 +17,34 @@ const Navbar: FC = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
-            <Link href="/#hackathons" className="hover:text-cyan-500 transition-colors">
+            <Link
+              href="/#hackathons"
+              className="hover:text-cyan-500 transition-colors"
+            >
               Hackathons
             </Link>
-            <Link href="/#experience" className="hover:text-cyan-500 transition-colors">
+            <Link
+              href="/#experience"
+              className="hover:text-cyan-500 transition-colors"
+            >
               Experience
             </Link>
-            <Link href="/#education" className="hover:text-cyan-500 transition-colors">
+            <Link
+              href="/#education"
+              className="hover:text-cyan-500 transition-colors"
+            >
               Education
             </Link>
-            <Link href="/#skills" className="hover:text-cyan-500 transition-colors">
+            <Link
+              href="/#skills"
+              className="hover:text-cyan-500 transition-colors"
+            >
               Skills
             </Link>
-            <Link href="/#contact" className="hover:text-cyan-500 transition-colors">
+            <Link
+              href="/#contact"
+              className="hover:text-cyan-500 transition-colors"
+            >
               Contact
             </Link>
 
@@ -55,7 +70,9 @@ const Navbar: FC = () => {
         <div className="fixed inset-0 z-[100] bg-[#0b0f19] flex flex-col">
           <div className="w-full h-16 px-4 flex items-center justify-between border-b border-border/40">
             <div className="text-2xl font-bold text-cyan-500 tracking-wider">
-              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>VO</Link>
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                VO
+              </Link>
             </div>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
@@ -65,45 +82,49 @@ const Navbar: FC = () => {
             </button>
           </div>
 
-          <div className="flex flex-col items-start w-full px-6 space-y-6 mt-8 text-lg font-medium text-gray-300">
+          <div className="flex flex-col w-full px-6 space-y-6 mt-8 text-lg font-medium text-gray-300">
             <Link
               href="/#hackathons"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-cyan-500 transition-colors w-full"
+              className="hover:text-cyan-500 transition-colors w-full block"
             >
               Hackathons
             </Link>
             <Link
               href="/#experience"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-cyan-500 transition-colors w-full"
+              className="hover:text-cyan-500 transition-colors w-full block"
             >
               Experience
             </Link>
             <Link
               href="/#education"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-cyan-500 transition-colors w-full"
+              className="hover:text-cyan-500 transition-colors w-full block"
             >
               Education
             </Link>
             <Link
               href="/#skills"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-cyan-500 transition-colors w-full"
+              className="hover:text-cyan-500 transition-colors w-full block"
             >
               Skills
             </Link>
             <Link
               href="/#contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-cyan-500 transition-colors w-full"
+              className="hover:text-cyan-500 transition-colors w-full block"
             >
               Contact
             </Link>
 
             <div className="w-full pt-4">
-              <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link
+                href="/#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full block"
+              >
                 <Button variant="primary" className="w-full rounded-md">
                   Hire Me
                 </Button>

@@ -3,7 +3,7 @@
 :root {
   --background: #0b0f19;
   --foreground: #f3f4f6;
-  
+
   --color-cyan: #00e5ff;
   --color-orange: #ff6b00;
   --color-card-bg: #111827;
@@ -11,12 +11,16 @@
   --color-hover-bg: #1f2937;
 }
 
+/* * {
+  border: 1px solid red;
+} */
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --font-mono: var(--font-geist-mono);
-  
+
   --color-cyan-500: var(--color-cyan);
   --color-orange-500: var(--color-orange);
   --color-card: var(--color-card-bg);
@@ -35,7 +39,8 @@ html {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
