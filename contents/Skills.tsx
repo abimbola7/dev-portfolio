@@ -56,7 +56,7 @@ const Skills: FC = () => {
                 {category.skills.map((skill, i) => (
                   <div 
                     key={i} 
-                    className="px-4 py-2 rounded-full text-sm font-medium text-gray-300 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+                    className="px-4 py-2 rounded-full text-sm font-medium text-gray-300 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-[#10b981] hover:border-[#10b981]/30 transition-all duration-200"
                   >
                     {skill}
                   </div>

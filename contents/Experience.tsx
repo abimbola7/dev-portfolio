@@ -48,9 +48,12 @@ const Experience: FC = () => {
   return (
     <section
       id="experience"
-      className="py-20 px-4 flex flex-col items-center w-full bg-[#0a0a0a]"
+      className="py-20 px-4 flex flex-col items-center w-full bg-[#0a0a0a] relative overflow-hidden"
     >
-      <div className="max-w-4xl w-full mx-auto flex flex-col items-center">
+      {/* Background glow blob */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#10b981]/5 rounded-full blur-[120px] pointer-events-none translate-x-1/3 -translate-y-1/4" />
+
+      <div className="max-w-4xl w-full mx-auto flex flex-col items-center relative z-10">
         <Badge className="border-[#10b981]/30 text-[#10b981] bg-[#10b981]/10 mb-6 gap-2">
           <Briefcase size={14} />
           Professional Journey
@@ -60,52 +63,54 @@ const Experience: FC = () => {
           Work <span className="text-[#10b981]">Experience</span>
         </h2>
 
-        <div className="w-full space-y-6">
-          {experiences.map((exp, idx) => (
-            <Card
-              key={idx}
-              className="bg-white/5 backdrop-blur-md hover:bg-white/10 border-white/10 group hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)] transition-all duration-300"
-            >
-              <CardContent className="p-5 md:p-6 flex flex-col md:flex-row gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-xl bg-card border border-border flex items-center justify-center text-[#10b981]">
+        {/* Timeline */}
+        <div className="w-full relative">
+          {/* Vertical line */}
+          <div className="hidden md:block absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-[#10b981]/40 via-[#10b981]/20 to-transparent" />
+
+          <div className="space-y-6">
+            {experiences.map((exp, idx) => (
+              <div key={idx} className="flex gap-6">
+                {/* Timeline dot */}
+                <div className="hidden md:flex flex-col items-center shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#10b981] z-10">
                     <Briefcase size={20} />
                   </div>
                 </div>
 
-                <div className="flex-grow flex flex-col">
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-[#10b981] transition-colors duration-300">
-                        {exp.role}
-                      </h3>
-                      <p className="text-[#10b981] font-medium">{exp.company}</p>
+                <Card className="flex-1 bg-white/5 backdrop-blur-md hover:bg-white/10 border-white/10 group hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)] transition-all duration-300">
+                  <CardContent className="p-5 md:p-6 flex flex-col gap-4">
+                    <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-[#10b981] transition-colors duration-300">
+                          {exp.role}
+                        </h3>
+                        <p className="text-[#10b981] font-medium mt-1">{exp.company}</p>
+                      </div>
+                      <div className="text-left md:text-right mt-2 md:mt-0 text-sm text-gray-400 shrink-0">
+                        <p>{exp.date}</p>
+                        {exp.location && <p>{exp.location}</p>}
+                      </div>
                     </div>
-                    <div className="text-left md:text-right mt-2 md:mt-0 text-sm text-gray-400">
-                      <p>{exp.date}</p>
-                      {exp.location && <p>{exp.location}</p>}
-                    </div>
-                  </div>
 
-                  {exp.points.length > 0 && (
-                    <ul className="space-y-2 mt-2">
-                      {exp.points.map((point, i) => (
-                        <li
-                          key={i}
-                          className="text-gray-300 text-sm md:text-base flex items-start"
-                        >
-                          <span className="text-[#10b981] mr-2 mt-1.5 text-xs">
-                            ●
-                          </span>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                    {exp.points.length > 0 && (
+                      <ul className="space-y-2 mt-2">
+                        {exp.points.map((point, i) => (
+                          <li
+                            key={i}
+                            className="text-gray-300 text-sm md:text-base flex items-start"
+                          >
+                            <span className="text-[#10b981] mr-2 mt-1.5 text-xs shrink-0">●</span>
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

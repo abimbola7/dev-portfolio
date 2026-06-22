@@ -27,9 +27,12 @@ const Hackathons: FC = () => {
   return (
     <section
       id="hackathons"
-      className="py-20 px-4 flex flex-col items-center w-full bg-[#0a0a0a]"
+      className="py-20 px-4 flex flex-col items-center w-full bg-[#0a0a0a] relative overflow-hidden"
     >
-      <div className="max-w-6xl w-full mx-auto flex flex-col items-center">
+      {/* Background glow blob */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#10b981]/5 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="max-w-6xl w-full mx-auto flex flex-col items-center relative z-10">
         <Badge className="border-[#10b981]/30 text-[#10b981] bg-[#10b981]/10 mb-6 gap-2">
           <Trophy size={14} />
           Hackathons & Competitions
@@ -39,30 +42,30 @@ const Hackathons: FC = () => {
           Featured <span className="text-[#10b981]">Hackathons</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
           {hackathonsData.map((hackathon, idx) => (
             <div
               key={idx}
-              className="flex flex-col bg-white/5 backdrop-blur-md rounded-xl border border-white/10 p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+              className="flex flex-col bg-white/5 backdrop-blur-md rounded-xl border border-white/10 p-6 hover:bg-white/10 hover:border-[#10b981]/40 hover:shadow-[0_0_40px_rgba(16,185,129,0.12)] transition-all duration-300"
             >
-              <h3 className="text-xl font-bold text-white mb-4 leading-snug">
+              <h3 className="text-xl font-bold text-white mb-4 leading-snug group-hover:text-[#10b981] transition-colors">
                 {hackathon.title}
               </h3>
 
               <div className="flex flex-col gap-2 mb-6">
                 <div className="flex items-center gap-2 text-gray-400 text-sm">
-                  <MapPin size={16} />
+                  <MapPin size={14} className="text-[#10b981] shrink-0" />
                   <span>{hackathon.location}</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-400 text-sm">
-                  <Calendar size={16} />
+                  <Calendar size={14} className="text-[#10b981] shrink-0" />
                   <span>{hackathon.date}</span>
                 </div>
               </div>
 
               <div className="mb-4">
                 <span className="font-bold text-white">Project:</span>{" "}
-                <span className="text-gray-300">{hackathon.project}</span>
+                <span className="text-[#10b981]">{hackathon.project}</span>
               </div>
 
               <p className="text-gray-400 text-sm leading-relaxed">

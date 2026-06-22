@@ -58,7 +58,6 @@ const Navbar: FC = () => {
             <button
               onClick={() => {
                 setIsMobileMenuOpen(true);
-                alert("is button pushed");
               }}
               className="p-3 -mr-3 rounded-md text-gray-300 hover:text-white focus:outline-none transition-colors"
               aria-label="Open menu"

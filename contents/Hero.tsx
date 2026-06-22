@@ -164,7 +164,7 @@ const SocialIcon = ({
   <Link
     target="_blank,"
     href={href}
-    className="w-10 h-10 rounded-lg border border-border flex items-center justify-center text-gray-400 hover:text-[#10b981] hover:border-[#10b981] transition-colors bg-card"
+    className="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-400 bg-white/5 hover:text-[#10b981] hover:border-[#10b981]/50 hover:bg-white/10 hover:scale-110 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transition-all duration-300"
   >
     {icon}
   </Link>
