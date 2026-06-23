@@ -29,7 +29,7 @@ const Navbar: FC = () => {
         ([entry]) => {
           if (entry.isIntersecting) setActiveSection(id);
         },
-        { threshold: 0.3, rootMargin: "-64px 0px 0px 0px" }
+        { threshold: 0.3, rootMargin: "-64px 0px 0px 0px" },
       );
       observer.observe(el);
       observers.push(observer);
@@ -43,7 +43,7 @@ const Navbar: FC = () => {
       <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#0a0a0a]/80 border-b border-white/5">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
           <div className="text-2xl font-bold text-[#10b981] tracking-wider">
-            <Link href="/">VO</Link>
+            <Link href="/">VT</Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
@@ -91,13 +91,17 @@ const Navbar: FC = () => {
       {/* Mobile Drawer */}
       <div
         className={`fixed top-0 right-0 z-[100] h-full w-[85%] max-w-sm bg-[#0a0a0a] border-l border-white/10 shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full invisible pointer-events-none"
+          isMobileMenuOpen
+            ? "translate-x-0"
+            : "translate-x-full invisible pointer-events-none"
         }`}
       >
         <div className="flex flex-col h-full overflow-y-auto">
           <div className="w-full h-16 px-6 flex items-center justify-between border-b border-white/10 shrink-0">
             <div className="text-2xl font-bold text-[#10b981] tracking-wider">
-              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>VO</Link>
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                VO
+              </Link>
             </div>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
