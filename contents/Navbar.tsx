@@ -40,7 +40,7 @@ const Navbar: FC = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#0a0a0a]/80 border-b border-white/5">
+      <nav className="fixed top-0 z-[100] w-full backdrop-blur-md bg-[#0a0a0a]/80 border-b border-white/5">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
           <div className="text-2xl font-bold text-[#10b981] tracking-wider">
             <Link href="/">VT</Link>
