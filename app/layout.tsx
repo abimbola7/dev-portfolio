@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 
 import ScrollProgress from "@/components/ui/scroll-progress";
 import BackToTop from "@/components/ui/back-to-top";
+import SmoothScroll from "@/components/ui/smooth-scroll";
 
 export default function RootLayout({
   children,
@@ -36,6 +37,7 @@ export default function RootLayout({
         className="min-h-screen flex flex-col overflow-x-hidden"
         suppressHydrationWarning
       >
+        <SmoothScroll />
         <ScrollProgress />
         {children}
         <BackToTop />

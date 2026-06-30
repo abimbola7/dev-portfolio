@@ -35,7 +35,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behaviour handled by Lenis */
 }
 
 @keyframes bounce {
