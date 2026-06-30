@@ -6,12 +6,12 @@ import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 
 const navLinks = [
-  { label: "Hackathons", href: "/#hackathons", id: "hackathons" },
-  { label: "Experience", href: "/#experience", id: "experience" },
-  { label: "Projects", href: "/#projects", id: "projects" },
-  { label: "Education", href: "/#education", id: "education" },
-  { label: "Skills", href: "/#skills", id: "skills" },
-  { label: "Contact", href: "/#contact", id: "contact" },
+  { label: "Hackathons", href: "#hackathons", id: "hackathons" },
+  { label: "Experience", href: "#experience", id: "experience" },
+  { label: "Projects", href: "#projects", id: "projects" },
+  { label: "Education", href: "#education", id: "education" },
+  { label: "Skills", href: "#skills", id: "skills" },
+  { label: "Contact", href: "#contact", id: "contact" },
 ];
 
 const Navbar: FC = () => {
@@ -62,7 +62,7 @@ const Navbar: FC = () => {
               </Link>
             ))}
 
-            <Link href="/#contact">
+            <Link href="#contact">
               <Button variant="primary">Hire Me</Button>
             </Link>
           </div>
@@ -126,7 +126,7 @@ const Navbar: FC = () => {
             ))}
             <div className="w-full pt-4">
               <Link
-                href="/#contact"
+                href="#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="w-full block"
               >

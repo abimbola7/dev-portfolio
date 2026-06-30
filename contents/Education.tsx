@@ -2,7 +2,7 @@
 
 import Badge from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap } from "lucide-react";
+import { Award, GraduationCap } from "lucide-react";
 import { FC } from "react";
 
 const education = [
@@ -16,10 +16,20 @@ const education = [
   {
     degree: "Bachelor of Science in Electrical and Electronics Engineering",
     university: "Obafemi Awolowo University",
-    date: "Graduated Dec 2023",
+    date: "Apr 2017 – Aug 2024",
     location: "Osun, Nigeria",
     status: "Completed",
   },
+];
+
+const certifications = [
+  { name: "Data Engineering Associate", issuer: "DataCamp" },
+  { name: "Python Programming", issuer: "DataCamp" },
+  { name: "dbt Fundamentals", issuer: "Udacity" },
+  { name: "dbt & Data Modelling", issuer: "DataCamp" },
+  { name: "Database Design & Data Warehousing", issuer: "DataCamp" },
+  { name: "PostgreSQL", issuer: "DataCamp" },
+  { name: "PySpark", issuer: "DataCamp" },
 ];
 
 const Education: FC = () => {
@@ -81,6 +91,31 @@ const Education: FC = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Certifications */}
+        <div className="w-full">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-10 h-10 rounded-xl bg-[#10b981]/10 border border-[#10b981]/30 flex items-center justify-center text-[#10b981]">
+              <Award size={18} />
+            </div>
+            <h3 className="text-2xl font-bold text-white">Certifications</h3>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {certifications.map((cert, idx) => (
+              <div
+                key={idx}
+                className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#10b981]/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300 group"
+              >
+                <div className="w-2 h-2 rounded-full bg-[#10b981] shrink-0 group-hover:shadow-[0_0_8px_rgba(16,185,129,0.8)] transition-all duration-300" />
+                <div>
+                  <p className="text-white font-medium text-sm">{cert.name}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{cert.issuer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

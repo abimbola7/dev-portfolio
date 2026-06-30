@@ -24,7 +24,7 @@ const skillCategories = [
   {
     title: "Tools & Frameworks",
     icon: <Wrench size={20} />,
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "XGBoost", "Git", "ROS"]
+    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Claude", "XGBoost", "Git", "ROS"]
   }
 ];
 

@@ -51,7 +51,7 @@ const Contact: FC = () => {
             </Link>
 
             {/* Phone Card */}
-            <Link href="tel:+16076631556" className="w-full">
+            <Link href="tel:+16672624127" className="w-full">
               <Card className="h-full bg-white/5 backdrop-blur-md border-white/10 hover:bg-white/10 text-center flex flex-col items-center hover:border-[#10b981]/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-300 cursor-pointer relative overflow-hidden group">
                 <div className="absolute inset-0 bg-[#10b981]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
                 <CardContent className="p-6 flex flex-col items-center gap-3 relative z-10">
@@ -59,7 +59,7 @@ const Contact: FC = () => {
                     <Phone size={22} />
                   </div>
                   <h3 className="text-base font-bold text-white">Phone</h3>
-                  <p className="text-gray-400 text-sm">(607) 663-1556</p>
+                  <p className="text-gray-400 text-sm">+1(667) 262-4127</p>
                 </CardContent>
               </Card>
             </Link>

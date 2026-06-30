@@ -51,10 +51,12 @@ const Hero: FC = () => {
                 Contact Me
               </Button>
             </Link>
-            <Button variant="outline" className="gap-2">
-              <Download size={18} />
-              Download CV
-            </Button>
+            <Link href="/Victor_Oloruntoba_CV.pdf" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="gap-2">
+                <Download size={18} />
+                Download CV
+              </Button>
+            </Link>
           </div>
 
           <div className="flex items-center gap-4 pt-6">
@@ -88,7 +90,7 @@ const Hero: FC = () => {
                   fill="currentColor"
                 >
                   <title>Upwork</title>
-                  <path d="M17.401 9.475c-2.316 0-3.963 1.879-4.254 4.502h-.028c-.808-1.517-1.425-3.178-1.745-4.502H8.384V14.36c0 1.258-1.01 2.277-2.25 2.277-1.24 0-2.247-1.019-2.247-2.277V9.475H.895v4.885c0 2.903 2.339 5.26 5.239 5.26 2.9 0 5.241-2.357 5.241-5.26V13.84c.677 2.148 1.942 4.417 3.513 5.962l-1.892 4.198h3.19l1.455-3.328c1.196.282 2.067.422 2.952.422 2.901 0 5.245-2.356 5.245-5.26 0-2.902-2.344-5.26-5.245-5.26v.001h.008ZM17.4 17.82c-1.397 0-2.58-.69-3.238-1.78l.492-1.077c.484.717 1.488 1.624 2.744 1.624 1.24 0 2.247-1.019 2.247-2.277s-1.008-2.277-2.247-2.277c-1.226 0-2.261.99-2.261 2.277v.008c.03.35.1.728.167 1.09h-.032c-.066-.363-.135-.742-.167-1.092v-.008c0-1.287 1.037-2.277 2.262-2.277 1.24 0 2.246 1.019 2.246 2.277s-1.006 2.277-2.246 2.277Z" />
+                  <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" />
                 </svg>
               }
               href="https://www.upwork.com/freelancers/tobavictor"
@@ -111,44 +113,7 @@ const Hero: FC = () => {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               }
-              href="https://www.linkedin.com/in/victor-oloruntoba-8067bb1a5"
-            />
-            <SocialIcon
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z" />
-                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-                </svg>
-              }
-              href="#"
-            />
-            <SocialIcon
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                </svg>
-              }
-              href="#"
+              href="https://www.linkedin.com/in/victor-oloruntoba-8067bb1a5/"
             />
           </div>
         </div>
